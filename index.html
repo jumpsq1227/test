@@ -29,7 +29,7 @@
   <div class="card">
     <h1>ドイツ語 A1 ランダム出題アプリ</h1>
     <div class="controls">
-      <label><input type="checkbox" id="jpFirst"> 日本語提示 → ドイツ語で答える</label>
+      <label><input type="checkbox" id="jpFirst"> 日本語 → ドイツ語</label>
       <label><input type="checkbox" id="useChoices" checked> 選択肢モード（4択）</label>
       <label><input type="checkbox" id="autoSpeak"> 回答表示時に発音</label>
       <button id="nextBtn" class="primary">問題を出す</button>
@@ -175,7 +175,7 @@ function handleChoice(div, opt, lang){
   const answerEl = document.getElementById('answer');
   if(opt === current){
     div.classList.add('correct');
-    answerEl.textContent = '正解！ 答え: ' + current.de + '  — ' + current.jp;
+    answerEl.textContent = '正解☺！ <b/r>答え: ' + current.de + '  — ' + current.jp;
     correct++;
     document.getElementById('correctCount').textContent = correct;
   } else {
