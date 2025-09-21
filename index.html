@@ -48,11 +48,11 @@
 
       let question, correctAnswer, options;
       if (mode === "jp2de") {
-        question = `「${randomWord.Translation}」に当たるドイツ語はどれ？`;
-        correctAnswer = `${randomWord.Artikle} ${randomWord.Wort}`.trim();
-        options = generateOptions(correctAnswer, "German", "Article");
+        // question = `「${randomWord.Translation}」に当たるドイツ語はどれ？`;
+        // correctAnswer = `${randomWord.Artikel} ${randomWord.Wort}`.trim();
+        // options = generateOptions(correctAnswer, "German", "Article");
       } else {
-        question = `「${randomWord.Wort}」(${randomWord.PartOfSpeech}, ${randomWord.Artikle}) の意味は？`;
+        question = `「${randomWord.Artikel} ${randomWord.Wort} `;
         correctAnswer = randomWord.Translation;
         options = generateOptions(correctAnswer, "Translation");
       }
