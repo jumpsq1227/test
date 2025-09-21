@@ -1,101 +1,112 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>A1 German Quiz</title>
+<meta charset="UTF-8">
+<title>A1 German Quiz 4択</title>
+<style>
+  #options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 400px;
+  }
+  #options button {
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+</style>
 </head>
 <body>
-  <h1>A1 German Quiz</h1>
+<h1>A1 German Quiz</h1>
 
-  <label>
-    <input type="radio" name="mode" value="jp2de" checked> 日本語 → ドイツ語
-  </label>
-  <label>
-    <input type="radio" name="mode" value="de2jp"> ドイツ語 → 日本語
-  </label>
-  <br><br>
+<label><input type="radio" name="mode" value="jp2de" checked> 日本語 → ドイツ語</label>
+<label><input type="radio" name="mode" value="de2jp"> ドイツ語 → 日本語</label>
+<br><br>
 
-  <button id="startBtn">クイズ開始</button>
-  <div id="quiz"></div>
-  <div id="result"></div>
+<button id="startBtn">クイズ開始</button>
+<div id="quiz"></div>
+<div id="options"></div>
+<div id="result"></div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-  <script>
-    let words = [];
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<script>
+let words = [];
 
-    // CSVを読み込む
-    async function loadCSV() {
-      try {
-        const response = await fetch("words.csv");
-        const text = await response.text();
-        // PapaParseで安全にCSVパース（カンマや引用符対応）
-        const result = Papa.parse(text, {header: true, skipEmptyLines: true});
-        words = result.data;
-        console.log("Loaded words:", words);
-      } catch (error) {
-        console.error("CSV読み込みエラー:", error);
-      }
-    }
+// CSV読み込み
+async function loadCSV() {
+  try {
+    const response = await fetch("words.csv");
+    const text = await response.text();
+    const result = Papa.parse(text, {header:true, skipEmptyLines:true});
+    words = result.data;
+    console.log("Loaded words:", words);
+  } catch (error) {
+    console.error("CSV読み込みエラー:", error);
+  }
+}
 
-    function startQuiz() {
-      if (words.length < 4) {
-        alert("最低4単語以上のwords.csvを用意してください。");
-        return;
-      }
+// シャッフル関数
+function shuffle(array) { return array.sort(()=>Math.random()-0.5); }
 
-      const mode = document.querySelector("input[name='mode']:checked").value;
-      const randomWord = words[Math.floor(Math.random() * words.length)];
+// 選択肢生成
+function generateOptions(correct, key, articleKey) {
+  let opts = [correct];
+  while (opts.length < 4) {
+    const rand = words[Math.floor(Math.random()*words.length)];
+    let val;
+    if(key==="Wort") val = `${rand[articleKey]} ${rand[key]}`.trim();
+    else val = rand[key];
+    if(!opts.includes(val)) opts.push(val);
+  }
+  return shuffle(opts);
+}
 
-      let question, correctAnswer, options;
-      if (mode === "jp2de") {
-        // question = `「${randomWord.Translation}」に当たるドイツ語はどれ？`;
-        // correctAnswer = `${randomWord.Artikel} ${randomWord.Wort}`.trim();
-        // options = generateOptions(correctAnswer, "German", "Article");
-      } else {
-        question = `${randomWord.Artikel} ${randomWord.Wort} `;
-        correctAnswer = randomWord.Translation;
-        options = generateOptions(correctAnswer, "Translation");
-      }
+// クイズ開始
+function startQuiz() {
+  if(words.length < 4) { alert("words.csv に最低4単語必要です"); return; }
 
-      const quizDiv = document.getElementById("quiz");
-      quizDiv.innerHTML = `<p>${question}</p>`;
-      options.forEach(opt => {
-        quizDiv.innerHTML += `<button onclick="checkAnswer('${correctAnswer}','${opt}')">${opt}</button><br>`;
-      });
-    }
+  const mode = document.querySelector("input[name='mode']:checked").value;
+  const randomWord = words[Math.floor(Math.random()*words.length)];
 
-    function generateOptions(correct, key, articleKey) {
-      let opts = [correct];
-      while (opts.length < 4) {
-        const rand = words[Math.floor(Math.random() * words.length)];
-        let val;
-        if (key === "German") {
-          val = `${rand[articleKey]} ${rand[key]}`.trim();
-        } else {
-          val = rand[key];
-        }
-        if (!opts.includes(val)) {
-          opts.push(val);
-        }
-      }
-      return shuffle(opts);
-    }
+  let question, correctAnswer, options;
+  if(mode==="jp2de"){
+    question = `「${randomWord.Translation}」に当たるドイツ語はどれ？`;
+    correctAnswer = `${randomWord.Artikel} ${randomWord.Wort}`.trim();
+    options = generateOptions(correctAnswer,"Wort","Artikel");
+  } else {
+    question = `Wort: ${randomWord.Artikel} ${randomWord.Wort}`;
+    correctAnswer = randomWord.Translation;
+    options = generateOptions(correctAnswer,"Translation");
+  }
 
-    function shuffle(array) {
-      return array.sort(() => Math.random() - 0.5);
-    }
+  document.getElementById("quiz").textContent = question;
+  const optionsDiv = document.getElementById("options");
+  optionsDiv.innerHTML = "";
+  options.forEach(opt=>{
+    const btn = document.createElement("button");
+    btn.textContent = opt;
+    btn.onclick = ()=>checkAnswer(btn,opt,correctAnswer);
+    optionsDiv.appendChild(btn);
+  });
 
-    function checkAnswer(correct, answer) {
-      const resultDiv = document.getElementById("result");
-      if (answer === correct) {
-        resultDiv.textContent = "正解！ 🎉";
-      } else {
-        resultDiv.textContent = `不正解。正しい答えは「${correct}」です。`;
-      }
-    }
+  document.getElementById("result").textContent = "";
+}
 
-    document.getElementById("startBtn").addEventListener("click", startQuiz);
-    loadCSV();
-  </script>
+// 回答チェック（色変更）
+function checkAnswer(btn, answer, correct) {
+  if(answer===correct){
+    btn.style.backgroundColor = "lightgreen";
+    document.getElementById("result").textContent = "正解！ 🎉";
+  } else {
+    btn.style.backgroundColor = "salmon";
+    document.getElementById("result").textContent = `不正解。正しい答えは「${correct}」です。`;
+  }
+}
+
+// イベント
+document.getElementById("startBtn").addEventListener("click", startQuiz);
+loadCSV();
+</script>
 </body>
 </html>
