@@ -19,6 +19,7 @@
   <div id="quiz"></div>
   <div id="result"></div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <script>
     let words = [];
 
@@ -27,28 +28,15 @@
       try {
         const response = await fetch("words.csv");
         const text = await response.text();
-        words = parseCSV(text);
+        // PapaParseで安全にCSVパース（カンマや引用符対応）
+        const result = Papa.parse(text, {header: true, skipEmptyLines: true});
+        words = result.data;
         console.log("Loaded words:", words);
       } catch (error) {
         console.error("CSV読み込みエラー:", error);
       }
     }
 
-    // CSVをパース
-    function parseCSV(text) {
-      const lines = text.trim().split("\n");
-      const headers = lines[0].split(",");
-      return lines.slice(1).map(line => {
-        const values = line.split(",");
-        let obj = {};
-        headers.forEach((h, i) => {
-          obj[h.trim()] = values[i] ? values[i].trim() : "";
-        });
-        return obj;
-      });
-    }
-
-    // クイズ開始
     function startQuiz() {
       if (words.length < 4) {
         alert("最低4単語以上のwords.csvを用意してください。");
@@ -60,25 +48,22 @@
 
       let question, correctAnswer, options;
       if (mode === "jp2de") {
-        question = `「${randomWord.Meaning}」に当たるドイツ語はどれ？`;
+        question = `「${randomWord.Translation}」に当たるドイツ語はどれ？`;
         correctAnswer = `${randomWord.Article} ${randomWord.German}`.trim();
         options = generateOptions(correctAnswer, "German", "Article");
       } else {
         question = `「${randomWord.German}」(${randomWord.PartOfSpeech}, ${randomWord.Article}) の意味は？`;
-        correctAnswer = randomWord.Meaning;
-        options = generateOptions(correctAnswer, "Meaning");
+        correctAnswer = randomWord.Translation;
+        options = generateOptions(correctAnswer, "Translation");
       }
 
       const quizDiv = document.getElementById("quiz");
       quizDiv.innerHTML = `<p>${question}</p>`;
       options.forEach(opt => {
-        quizDiv.innerHTML += `
-          <button onclick="checkAnswer('${correctAnswer}','${opt}')">${opt}</button><br>
-        `;
+        quizDiv.innerHTML += `<button onclick="checkAnswer('${correctAnswer}','${opt}')">${opt}</button><br>`;
       });
     }
 
-    // 選択肢を作る
     function generateOptions(correct, key, articleKey) {
       let opts = [correct];
       while (opts.length < 4) {
@@ -96,12 +81,10 @@
       return shuffle(opts);
     }
 
-    // 配列シャッフル
     function shuffle(array) {
       return array.sort(() => Math.random() - 0.5);
     }
 
-    // 回答チェック
     function checkAnswer(correct, answer) {
       const resultDiv = document.getElementById("result");
       if (answer === correct) {
@@ -112,8 +95,6 @@
     }
 
     document.getElementById("startBtn").addEventListener("click", startQuiz);
-
-    // ページ読み込み時にCSVをロード
     loadCSV();
   </script>
 </body>
