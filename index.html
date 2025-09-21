@@ -49,10 +49,10 @@
       let question, correctAnswer, options;
       if (mode === "jp2de") {
         question = `「${randomWord.Translation}」に当たるドイツ語はどれ？`;
-        correctAnswer = `${randomWord.Article} ${randomWord.German}`.trim();
+        correctAnswer = `${randomWord.Artikle} ${randomWord.Wort}`.trim();
         options = generateOptions(correctAnswer, "German", "Article");
       } else {
-        question = `「${randomWord.German}」(${randomWord.PartOfSpeech}, ${randomWord.Article}) の意味は？`;
+        question = `「${randomWord.Wort}」(${randomWord.PartOfSpeech}, ${randomWord.Artikle}) の意味は？`;
         correctAnswer = randomWord.Translation;
         options = generateOptions(correctAnswer, "Translation");
       }
