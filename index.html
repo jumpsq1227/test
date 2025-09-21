@@ -12,6 +12,7 @@
     margin-top: 10px;
   }
   #options button {
+    align-items: center;        /* 垂直方向中央揃え */
     padding: 25px;
     font-size: 1.5rem;
     cursor: pointer;
@@ -29,17 +30,22 @@
     border: 1px solid #333;
     cursor: pointer;
     margin-bottom: 20px;  /* 下の余白 */
-    background-color: #4CAF50;
+    background-color: #4626d4;
     color: white;
     transition: background-color 0.3s;
   }
   #startBtn:hover {
     background-color: #45a049; /* ホバーで少し色を変化 */
   }
+  #quiz {
+    font-size: 1.6rem;       /* 文字サイズを大きく */
+    font-weight: bold;       /* 太字 */
+    margin-bottom: 15px;     /* 下に余白 */
+  }
 </style>
 </head>
 <body>
-<h1>A1 German Quiz ver1.0</h1>
+<h1>A1 German Quiz</h1>
 
 <label><input type="radio" name="mode" value="jp2de" checked> 日本語 → ドイツ語</label>
 <label><input type="radio" name="mode" value="de2jp"> ドイツ語 → 日本語</label>
@@ -49,6 +55,7 @@
 <div id="quiz"></div>
 <div id="options"></div>
 <div id="result"></div>
+<div id="footerText">ver1.0</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
 <script>
