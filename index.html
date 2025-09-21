@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="UTF-8">
 <title>A1 German Quiz</title>
 <style>
@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
-    max-width: 400px;
+    max-width: 600px;
     margin-top: 10px;
   }
   #options button {
@@ -19,6 +19,22 @@
     border-radius: 8px;
     border: 1px solid #333;
     transition: background-color 0.3s;
+  }
+  #startBtn {
+    font-size: 1.5rem;   /* 文字サイズを大きく */
+    padding: 15px 30px;  /* 上下15px、左右30pxの余白 */
+    height: 70px;         /* ボタン高さ */
+    width: 100%;          /* 画面幅いっぱいに広げる */
+    border-radius: 10px;  /* 角丸 */
+    border: 1px solid #333;
+    cursor: pointer;
+    margin-bottom: 20px;  /* 下の余白 */
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  #startBtn:hover {
+    background-color: #45a049; /* ホバーで少し色を変化 */
   }
 </style>
 </head>
