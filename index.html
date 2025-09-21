@@ -1,48 +1,75 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Deutsch A1 Quiz</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 30px; }
-    #word { font-size: 2em; margin: 20px; }
-    button { font-size: 1em; margin: 10px; padding: 10px 20px; }
-  </style>
+  <title>A1 German Quiz</title>
 </head>
 <body>
-  <h1>A1 ドイツ語クイズ</h1>
-  <div>
-    <button onclick="setMode('de2ja')">ドイツ語 → 日本語</button>
-    <button onclick="setMode('ja2de')">日本語 → ドイツ語</button>
-  </div>
-  <div id="word">Lade Wörter...</div>
-  <button onclick="showAnswer()">答えを見る</button>
-  <button onclick="nextWord()">次へ</button>
-  <div id="answer" style="margin-top:20px; font-size:1.2em; color:blue;"></div>
+  <h1>A1 German Quiz</h1>
+  <button id="startBtn">クイズ開始</button>
+  <div id="quiz"></div>
+  <div id="result"></div>
 
   <script>
     let words = [];
-    let currentWord = null;
-    let mode = "de2ja"; // 初期モード
 
+    // CSVを読み込む関数
     async function loadCSV() {
-      const response = await fetch("words.csv");
-      const text = await response.text();
-      const lines = text.trim().split("\n").slice(1);
-      words = lines.map(line => {
-        const [Wort, Artikel, Unbestimmt, PartOfSpeech, Translation] = line.split(",");
-        return { Wort, Artikel, Unbestimmt, PartOfSpeech, Translation };
+      try {
+        const response = await fetch("words.csv");
+        const text = await response.text();
+        words = parseCSV(text);
+        console.log("Loaded words:", words);
+      } catch (error) {
+        console.error("CSV読み込みエラー:", error);
+      }
+    }
+
+    // CSVパース関数
+    function parseCSV(text) {
+      const lines = text.trim().split("\n");
+      const headers = lines[0].split(",");
+      return lines.slice(1).map(line => {
+        const values = line.split(",");
+        let obj = {};
+        headers.forEach((h, i) => {
+          obj[h.trim()] = values[i] ? values[i].trim() : "";
+        });
+        return obj;
       });
-      nextWord();
     }
 
-    function setMode(newMode) {
-      mode = newMode;
-      nextWord();
+    // クイズを開始する関数
+    function startQuiz() {
+      if (words.length === 0) {
+        alert("単語リストが読み込めていません。words.csv を確認してください。");
+        return;
+      }
+
+      const randomWord = words[Math.floor(Math.random() * words.length)];
+      const quizDiv = document.getElementById("quiz");
+      quizDiv.innerHTML = `
+        <p><strong>${randomWord.German}</strong> の意味は？（品詞: ${randomWord.PartOfSpeech}, 冠詞: ${randomWord.Article}）</p>
+        <input type="text" id="answer" placeholder="意味を入力">
+        <button onclick="checkAnswer('${randomWord.Meaning}')">回答</button>
+      `;
     }
 
-    function nextWord() {
-      if (words.length === 0) return;
-      currentWord = words[Math.floor(Math.random() * words.length)];
-      if (mode === "de2ja") {
-        document.getElementById("word").textContent =
+    // 回答チェック
+    function checkAnswer(correct) {
+      const answer = document.getElementById("answer").value.trim();
+      const resultDiv = document.getElementById("result");
+      if (answer === correct) {
+        resultDiv.textContent = "正解！";
+      } else {
+        resultDiv.textContent = `不正解。正しい答えは「${correct}」です。`;
+      }
+    }
+
+    document.getElementById("startBtn").addEventListener("click", startQuiz);
+
+    // ページ読み込み時にCSVをロード
+    loadCSV();
+  </script>
+</body>
+</html>
