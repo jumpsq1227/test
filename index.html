@@ -18,7 +18,7 @@
 </style>
 </head>
 <body>
-<h1>A1 German Quiz</h1>
+<h1>A1 German Quiz ver1.0</h1>
 
 <label><input type="radio" name="mode" value="jp2de" checked> 日本語 → ドイツ語</label>
 <label><input type="radio" name="mode" value="de2jp"> ドイツ語 → 日本語</label>
@@ -71,11 +71,11 @@ function startQuiz() {
 
   let question, correctAnswer, options;
   if(mode==="jp2de"){
-    question = `「${randomWord.Translation}」に当たるドイツ語はどれ？`;
+    question = `${randomWord.Translation}`;
     correctAnswer = `${randomWord.Artikel} ${randomWord.Wort}`.trim();
     options = generateOptions(correctAnswer,"Wort","Artikel");
   } else {
-    question = `Wort: ${randomWord.Artikel} ${randomWord.Wort}`;
+    question = `${randomWord.Artikel} ${randomWord.Wort}`;
     correctAnswer = randomWord.Translation;
     options = generateOptions(correctAnswer,"Translation");
   }
@@ -97,10 +97,10 @@ function startQuiz() {
 function checkAnswer(btn, answer, correct) {
   if(answer===correct){
     btn.style.backgroundColor = "lightgreen";
-    document.getElementById("result").textContent = "正解！ 🎉";
+    document.getElementById("result").textContent = "正解🎉";
   } else {
     btn.style.backgroundColor = "salmon";
-    document.getElementById("result").textContent = `不正解。正しい答えは「${correct}」です。`;
+    document.getElementById("result").textContent = `不正解😥 正しい答えは「${correct}」です。`;
   }
 }
 
