@@ -10,7 +10,11 @@
   </style>
 </head>
 <body>
-  <h1>ドイツ語A1クイズ</h1>
+  <h1>🇩🇪 A1 ドイツ語クイズ</h1>
+  <div>
+    <button onclick="setMode('de2ja')">ドイツ語 → 日本語</button>
+    <button onclick="setMode('ja2de')">日本語 → ドイツ語</button>
+  </div>
   <div id="word">Lade Wörter...</div>
   <button onclick="showAnswer()">答えを見る</button>
   <button onclick="nextWord()">次へ</button>
@@ -19,12 +23,12 @@
   <script>
     let words = [];
     let currentWord = null;
+    let mode = "de2ja"; // 初期モード
 
-    // CSV読み込み
     async function loadCSV() {
       const response = await fetch("words.csv");
       const text = await response.text();
-      const lines = text.trim().split("\n").slice(1); // ヘッダーを除く
+      const lines = text.trim().split("\n").slice(1);
       words = lines.map(line => {
         const [Wort, Artikel, Unbestimmt, PartOfSpeech, Translation] = line.split(",");
         return { Wort, Artikel, Unbestimmt, PartOfSpeech, Translation };
@@ -32,25 +36,13 @@
       nextWord();
     }
 
+    function setMode(newMode) {
+      mode = newMode;
+      nextWord();
+    }
+
     function nextWord() {
       if (words.length === 0) return;
       currentWord = words[Math.floor(Math.random() * words.length)];
-      document.getElementById("word").textContent = currentWord.Wort;
-      document.getElementById("answer").textContent = "";
-    }
-
-    function showAnswer() {
-      if (!currentWord) return;
-      const answerText = `
-        定冠詞: ${currentWord.Artikel || "-"}　
-        不定冠詞: ${currentWord.Unbestimmt || "-"}　
-        品詞: ${currentWord.PartOfSpeech || "-"}　
-        日本語: ${currentWord.Translation || "-"}
-      `;
-      document.getElementById("answer").textContent = answerText;
-    }
-
-    loadCSV();
-  </script>
-</body>
-</html>
+      if (mode === "de2ja") {
+        document.getElementById("word").textContent =
