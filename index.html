@@ -175,12 +175,12 @@ function handleChoice(div, opt, lang){
   const answerEl = document.getElementById('answer');
   if(opt === current){
     div.classList.add('correct');
-    answerEl.textContent = '正解☺！ <b/r>答え: ' + current.de + '  — ' + current.jp;
+    answerEl.textContent = '正解！;
     correct++;
     document.getElementById('correctCount').textContent = correct;
   } else {
     div.classList.add('wrong');
-    answerEl.textContent = '不正解。正解は: ' + current.de + '  — ' + current.jp;
+    answerEl.textContent = '不正解。正解は: ' + current.jp;
   }
   answerEl.style.display='block';
   if(document.getElementById('autoSpeak').checked) speak(current.de);
