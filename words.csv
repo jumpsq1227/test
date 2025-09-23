@@ -1,151 +1,755 @@
 Wort,Artikel,Unbestimmt,PartOfSpeech,Translation
-Mann,der,ein,Nomen,男
-Frau,die,eine,Nomen,女
-Kind,das,ein,Nomen,子供
-Mutter,die,eine,Nomen,母
-Vater,der,ein,Nomen,父
-Eltern,,,Nomen,両親
-Bruder,der,ein,Nomen,兄/弟
-Schwester,die,eine,Nomen,姉/妹
-Freund,der,ein,Nomen,友達（男性）
-Freundin,die,eine,Nomen,友達（女性）
-Kollege,der,ein,Nomen,同僚（男性）
-Kollegin,die,eine,Nomen,同僚（女性）
-Haus,das,ein,Nomen,家
-Wohnung,die,eine,Nomen,アパート
-Zimmer,das,ein,Nomen,部屋
-Tisch,der,ein,Nomen,机
-Stuhl,der,ein,Nomen,椅子
-Bett,das,ein,Nomen,ベッド
-Fenster,das,ein,Nomen,窓
-Tür,die,eine,Nomen,ドア
-Auto,das,ein,Nomen,車
-Fahrrad,das,ein,Nomen,自転車
-Bahnhof,der,ein,Nomen,駅
-Flughafen,der,ein,Nomen,空港
-Hotel,das,ein,Nomen,ホテル
-Restaurant,das,ein,Nomen,レストラン
-Supermarkt,der,ein,Nomen,スーパー
-Küche,die,eine,Nomen,台所
-Badezimmer,das,ein,Nomen,浴室
-Schule,die,eine,Nomen,学校
-Universität,die,eine,Nomen,大学
-Arzt,der,ein,Nomen,医者
-Wasser,das,ein,Nomen,水
-Brot,das,ein,Nomen,パン
-Milch,die,eine,Nomen,牛乳
-Kaffee,der,ein,Nomen,コーヒー
-Tee,der,ein,Nomen,紅茶
-Saft,der,ein,Nomen,ジュース
+(ein)hundert,,,Zahl,100
+(ein)tausend,,,Zahl,1000
+ab,,,,離れて
+Abend-e,der,ein,Nomen,夕方
+aber ,,,,しかし
+abfahren,,,,出発する
+Abfahrt,die,eine,Nomen,出発
+abfliegen ,,,,脱ぐ
+Abflug,der,ein,Nomen,出発
+abgeben ,,,,引き渡す
+abholen ,,,,選び出す 
+Absender,der,ein,Nomen,送信者
+acht,,,Zahl,8
+achtzehn,,,Zahl,18
+achtzig,,,Zahl,80
+Adresse-en,die,eine,Nomen,住所
+all- ,,,,全て-
+allein ,,,,一人で
+also ,,,,それで
+alt ,,,,古い
+Alter,das,ein,Nomen,年齢
+an ,,,,の上
+an sein,,,,なる
+anbieten ,,,,提供する
+ander- ,,,,で-
+Anfang,der,ein,Nomen,始まり
+anfangen ,,,,始める
+Angebot,das,ein,Nomen,オファー
+anklicken ,,,,クリック
+ankommen ,,,,到着する
+ankreuzen ,,,,チェックする
+Ankunft,die,eine,Nomen,到着
+anmachen ,,,,オンにする
+Anmeldung,die,eine,Nomen,登録
+Anrede,die,eine,Nomen,挨拶
+Anruf,der,ein,Nomen,電話
+anrufen ,,,,電話する
+Ansage,die,eine,Nomen,発表
+Anschluss,der,ein,Nomen,繋がり
+Antwort,die,eine,Nomen,答え
+antworten ,,,,答える
+Anzeige,die,eine,Nomen,広告
+Apartment,das,ein,Nomen,アパート
 Apfel,der,ein,Nomen,りんご
+Appetit,der,ein,Nomen,食欲
+April,der,ein,Nomen,4月
+Arbeit,die,eine,Nomen,仕事
+arbeiten ,,,,働く
+arbeitslos ,,,,失業した
+Arbeitsplatz,der,ein,Nomen,職場
+Arbeitsplatz,der,,Nomen,職場
+Arm,der,ein,Nomen,アーム
+Arzt,der,ein,Nomen,医師
+auch ,,,,それで
+auf ,,,,の上
+auf sein,,,,起きる
+Aufgabe,die,eine,Nomen,タスク
+aufhören ,,,,停止 
+aufstehen ,,,,立ち上がる
+Aufzug,der,ein,Nomen,エレベーター
+Auge,das,ein,Nomen,目
+August,der,ein,Nomen,8月
+aus ,,,,のうち
+aus sein,,,,オフになる
+Ausflug,der,ein,Nomen,寄り道
+ausfüllen ,,,,記入する
+Ausgang,der,ein,Nomen,出口
+Auskunft,die,eine,Nomen,情報
+Ausland,das,ein,Nomen,海外
+Ausländer,der,ein,Nomen,外国人
+ausländisch ,,,,外国の
+ausmachen ,,,,消す
+Aussage,die,eine,Nomen,声明
+aussehen ,,,,見て
+aussteigen ,,,,降りる
+Ausweis,der,ein,Nomen,ID
+Auto,das,ein,Nomen,車
+Autobahn,die,eine,Nomen,高速道路
+Automat,der,ein,Nomen,機械
+automatisch ,,,,自動的に
+Baby,das,ein,Nomen,赤ちゃん
+Bäckerei,die,eine,Nomen,ベーカリー
+Bad,das,ein,Nomen,バスルーム
+baden ,,,,入浴する
+Bahn,die,eine,Nomen,電車
+Bahnhof,der,ein,Nomen,鉄道駅
+Bahnsteig,der,ein,Nomen,プラットフォーム
+bald ,,,,すぐ
+Balkon,der,ein,Nomen,バルコニー
 Banane,die,eine,Nomen,バナナ
-Fleisch,das,ein,Nomen,肉
-Fisch,der,ein,Nomen,魚
-Gemüse,,,Nomen,野菜
-Obst,,,Nomen,果物
-Ei,das,ein,Nomen,卵
-Käse,der,ein,Nomen,チーズ
+Bank,die,eine,Nomen,銀行
+Bauch,der,ein,Nomen,腹
+Baum,der,ein,Nomen,木
+Beamte,der,ein,Nomen,役員
+bedeuten ,,,,意味する
+beginnen ,,,,始める
+bei ,,,,で
+beide ,,,,両方
+Bein,das,ein,Nomen,脚
+Beispiel,das,ein,Nomen,例
+bekannt ,,,,知られている
+bekommen ,,,,受け取る
+benutzen ,,,,使用する
+Beruf,der,ein,Nomen,職業
+besetzt ,,,,占領された
+besichtigen ,,,,見る、訪問する
+besser ,,,,より良い
+best- ,,,,最高-
+bestellen ,,,,注文する
+besuchen ,,,,訪問する
+Bett,das,ein,Nomen,ベッド
+bezahlen ,,,,支払う
+Bier,das,ein,Nomen,ビール
+Bild,das,ein,Nomen,写真
+billig ,,,,安い
+Birne,die,eine,Nomen,梨
+bis ,,,,それまで
+bisschen ,,,,少し 
+bitte ,,,,お願いします
+bitten ,,,,聞く
+bitter ,,,,苦い
+bleiben ,,,,残る
+Bleistift,der,ein,Nomen,鉛筆
+Blick,der,ein,Nomen,ビュー
+Blume,die,eine,Nomen,花
+Bogen,der,ein,Nomen,弓
+böse ,,,,怒った
+brauchen ,,,,必要とする
+breit ,,,,広い
+Brief,der,ein,Nomen,手紙
+Briefmarke,die,eine,Nomen,スタンプ
+bringen ,,,,持ってくる
+Brot,das,ein,Nomen,パン
+Brötchen,das,ein,Nomen,ロールパン
+Bruder,der,ein,Nomen,兄弟
+Buch,das,ein,Nomen,本
+Buchstabe,der,ein,Nomen,手紙
+buchstabieren ,,,,綴りである
+Bus,der,ein,Nomen,バス
 Butter,die,eine,Nomen,バター
-Reis,der,ein,Nomen,ご飯（米）
-Salat,der,ein,Nomen,サラダ
-Suppe,die,eine,Nomen,スープ
-Zucker,der,ein,Nomen,砂糖
-Salz,das,ein,Nomen,塩
-Tag,der,ein,Nomen,日
-Nacht,die,eine,Nomen,夜
-Morgen,der,ein,Nomen,朝
-Abend,der,ein,Nomen,夕方
-Woche,die,eine,Nomen,週
-Monat,der,ein,Nomen,月
-Jahr,das,ein,Nomen,年
-heute,,,Adverb,今日
-morgen,,,Adverb,明日
-gestern,,,Adverb,昨日
-jetzt,,,Adverb,今
-später,,,Adverb,後で
-bald,,,Adverb,まもなく
-gerade,,,Adverb,ちょうど（今）
-sein,,,Verb,〜である
-haben,,,Verb,持っている
-gehen,,,Verb,行く
-kommen,,,Verb,来る
-sehen,,,Verb,見る
-hören,,,Verb,聞く
-sprechen,,,Verb,話す
-lernen,,,Verb,学ぶ
-lesen,,,Verb,読む
-schreiben,,,Verb,書く
-essen,,,Verb,食べる
-trinken,,,Verb,飲む
-schlafen,,,Verb,眠る
-arbeiten,,,Verb,働く
-spielen,,,Verb,遊ぶ
-machen,,,Verb,する/作る
-kaufen,,,Verb,買う
-verkaufen,,,Verb,売る
-finden,,,Verb,見つける
-geben,,,Verb,与える
-nehmen,,,Verb,取る
-stehen,,,Verb,立つ
-sitzen,,,Verb,座る
-fahren,,,Verb,乗る/運転する
-laufen,,,Verb,走る
-bleiben,,,Verb,留まる
-wohnen,,,Verb,住む
-öffnen,,,Verb,開ける
-schließen,,,Verb,閉める
-rufen,,,Verb,呼ぶ
-bezahlen,,,Verb,支払う
-probieren,,,Verb,試す
-helfen,,,Verb,助ける
-gut,,,Adjektiv,良い
-schlecht,,,Adjektiv,悪い
-groß,,,Adjektiv,大きい
-klein,,,Adjektiv,小さい
-neu,,,Adjektiv,新しい
-alt,,,Adjektiv,古い
-schön,,,Adjektiv,美しい
-hässlich,,,Adjektiv,醜い
-billig,,,Adjektiv,安い
-teuer,,,Adjektiv,高い
-heiß,,,Adjektiv,暑い/熱い
-kalt,,,Adjektiv,寒い/冷たい
-schnell,,,Adjektiv,速い
-langsam,,,Adjektiv,遅い
-warm,,,Adjektiv,暖かい
-sauber,,,Adjektiv,きれい
-schmutzig,,,Adjektiv,汚い
-leicht,,,Adjektiv,軽い/やさしい
-schwer,,,Adjektiv,重い/難しい
-interessant,,,Adjektiv,面白い
-wichtig,,,Adjektiv,重要な
-gefährlich,,,Adjektiv,危険な
-sicher,,,Adjektiv,安全な
-ruhig,,,Adjektiv,静かな
-laut,,,Adjektiv,うるさい
-wer,,,Pronomen,誰
-was,,,Pronomen,何
-wo,,,Adverb,どこ
-woher,,,Adverb,どこから
-wohin,,,Adverb,どこへ
-wann,,,Adverb,いつ
-warum,,,Adverb,なぜ
-wie,,,Adverb,どのように
-eins,,,Zahl,1
-zwei,,,Zahl,2
+Café -s,das,ein,Nomen,カフェ
+Chef,der,ein,Nomen,ボス
+circa/ca. ,,,,およそ
+Computer –,der,ein,Nomen,コンピューター
+da,,,,そこには
+Dame -n,die,eine,Nomen,女性
+daneben ,,,,その隣
+Dank,der,ein,Nomen,感謝
+danke ,,,,ありがとう
+danken ,,,,感謝する
+dann ,,,,それから
+Datum,das,ein,Nomen,日付
+dauern ,,,,最後
+dein- ,,,,あなたの-
+den Anrufbeantworter.,,,,留守番電話。
+denn ,,,,なぜなら
+der/die/das,,,,その
+deutsch,,,Nomen,ドイツ語
+Dezember,der,ein,Nomen,12月
+dich ,,,,あなた
+die Woche -e,die,eine,Nomen,週
+Dienstag,der,ein,Nomen,火曜日
+dies- ,,,,これ-
+dir ,,,,あなた
+Doktor,der,ein,Nomen,医者
+Donnerstag,der,ein,Nomen,木曜日
+Doppelzimmer,das,ein,Nomen,ダブルルーム
+Dorf,das,ein,Nomen,村
+draußen ,,,,外
 drei,,,Zahl,3
-vier,,,Zahl,4
+dreißig,,,Zahl,30
+dreizehn,,,Zahl,13
+drücken,,,,プレス
+drucken ,,,,押す
+Drucker,der,ein,Nomen,プリンター
+durch ,,,,を通して
+Durchsage,die,eine,Nomen,発表
+dürfen ,,,,～かもしれない
+Durst,der,ein,Nomen,渇き
+Dusche,die,eine,Nomen,シャワー
+E-Mail,die,eine,Nomen,電子メール
+Ecke,die,eine,Nomen,コーナー
+Ehefrau,die,eine,Nomen,妻
+Ehemann,der,ein,Nomen,夫
+Ei,das,ein,Nomen,卵
+eilig ,,,,急いで
+eine Milliarde =en,,,Zahl,10億
+eine Million =en,,,Zahl,100万
+einfach ,,,,単に
+Eingang,der,ein,Nomen,入り口
+einkaufen ,,,,買い物をする
+einladen ,,,,招待する
+Einladung,die,eine,Nomen,招待
+einmal ,,,,一度
+eins,,,Zahl,1
+einsteigen ,,,,乗る
+Eintritt,der,ein,Nomen,入り口
+einundzwanzig,,,Zahl,21
+Einzelzimmer,das,ein,Nomen,シングルルーム
+elf,,,Zahl,11
+Eltern (pl.),die,eine,Nomen,両親（複数）
+Empfänger,der,ein,Nomen,受取人
+empfehlen ,,,,推薦する
+Ende,das,ein,Nomen,終わり
+enden ,,,,終わり
+entschuldigen ,,,,言い訳
+Entschuldigung,die,eine,Nomen,すみません
+er ,,,,彼
+Ergebnis,das,ein,Nomen,結果
+erklären ,,,,説明する
+erlauben ,,,,許可する
+Erwachsene,der,ein,Nomen,アダルト
+erzählen ,,,,教えて
+es ,,,,それ
+Essen,das,ein,Nomen,食べ物
+essen ,,,,食べる
+euer ,,,,あなたの
+Euro,,,Nomen,ユーロ
+Europa,,,Nomen,ヨーロッパ
+Europäer,,,Nomen,ヨーロッパ人
+fahren ,,,,運転する
+Fahrer,der,ein,Nomen,ドライバ
+Fahrkarte,die,eine,Nomen,チケット
+Fahrrad,das,ein,Nomen,自転車
+falsch ,,,,正しくない
+Familie,die,eine,Nomen,家族
+Familienname,der,ein,Nomen,姓
+Familienstand,der,ein,Nomen,配偶者の有無
+Farbe (-n),die,eine,Nomen,色
+Fax,das,ein,Nomen,ファックス
+Februar,der,ein,Nomen,2月
+fehlen ,,,,逃す
+Fehler,der,ein,Nomen,間違い
+feiern ,,,,祝う
+fernsehen ,,,,テレビを見る
+Fernseher,der,ein,Nomen,テレビ
+fertig ,,,,完了する
+Feuer,das,ein,Nomen,火
+Fieber,das,ein,Nomen,熱
+Film,der,ein,Nomen,膜
+finden ,,,,探す
+Firma,die,eine,Nomen,会社
+Fisch,der,ein,Nomen,魚
+Flasche,die,eine,Nomen,ボトル
+Fleisch,das,ein,Nomen,肉
+fliegen ,,,,飛ぶ
+Flughafen,der,ein,Nomen,空港
+Flugzeug,das,ein,Nomen,飛行機
+Formular,das,ein,Nomen,形状
+Foto,das,ein,Nomen,写真
+Frage,die,eine,Nomen,聞く
+fragen ,,,,質問
+Frau,die,eine,Nomen,女性
+frei ,,,,自由な、空いている
+Freitag,der,ein,Nomen,金曜日
+Freizeit,die,eine,Nomen,余暇
+fremd ,,,,外国の
+Freund,der,ein,Nomen,友達
+früher ,,,,以前
+Frühling,der,ein,Nomen,春
+Frühstück,das,ein,Nomen,朝食
+frühstücken ,,,,朝食をとる
+Führung,die,eine,Nomen,ガイド
 fünf,,,Zahl,5
-links,,,Adverb,左
-rechts,,,Adverb,右
-Toilette,die,eine,Nomen,トイレ
-Rechnung,die,eine,Nomen,請求書/お会計
-Hilfe,die,eine,Nomen,助け
-Polizei,die,eine,Nomen,警察
-Apotheke,die,eine,Nomen,薬局
-Ticket,das,ein,Nomen,切符/チケット
-Reservierung,die,eine,Nomen,予約
-Schlüssel,der,ein,Nomen,鍵
-Ausweis,der,ein,Nomen,身分証明書
+fünf,,,Zahl,5
+fünfzehn,,,Zahl,15
+fünfzig,,,Zahl,50
+für ,,,,のために
+Fuß,der,ein,Nomen,足
+Fußball,der,ein,Nomen,フットボール
+Garten,der,ein,Nomen,庭
+Gast,der,ein,Nomen,ゲスト
+geben ,,,,与える
+geboren ,,,,生まれた
+Geburtsjahr,das,ein,Nomen,生年
+Geburtsort,der,ein,Nomen,出生地
+Geburtstag,der,ein,Nomen,誕生日
+gefallen ,,,,気に入る
+gegen ,,,,に対して
+gehen ,,,,行く
+gehören ,,,,属する
+Geld,das,ein,Nomen,お金
+Gemüse,das,ein,Nomen,野菜
+geöffnet,,,,開ける
+Gepäck,das,ein,Nomen,手荷物
+gerade,,,,真っ直ぐ
+geradeaus ,,,,まっすぐ
+gern(e),,,,喜んで
+Geschäft -e,das,ein,Nomen,ビジネス
+Geschenk,das,ein,Nomen,贈り物
+geschlossen ,,,,閉ざされた
+Geschwister,die,eine,Nomen,兄弟
+Gespräch -e,das,ein,Nomen,会話
+gestern ,,,,昨日
+gestorben ,,,,死亡した
+Getränk,das,ein,Nomen,飲み物
+Gewicht,das,ein,Nomen,重さ
+gewinnen ,,,,勝つ
+Glas,das,ein,Nomen,ガラス
+glauben ,,,,信じる
+Gleis -e,das,ein,Nomen,トラック
+Glück,das,ein,Nomen,運
+glücklich ,,,,幸せな
+Glückwunsch,der,ein,Nomen,おめでとう
+gratulieren ,,,,祝福する
+grillen ,,,,グリル
+groß ,,,,大きい
+Größe,die,eine,Nomen,サイズ
+Großeltern,die,eine,Nomen,祖父母
+Großmutter,die,eine,Nomen,祖母
+Großvater,der,ein,Nomen,祖父
+Gruppe,die,eine,Nomen,グループ
+Gruß,der,ein,Nomen,挨拶
+gültig ,,,,有効な
+günstig ,,,,安い
+gut ,,,,良い
+Haar,das,ein,Nomen,髪
+haben ,,,,持っている
+Hähnchen,das,ein,Nomen,チキン
+Halbpension,die,eine,Nomen,ハーフボード
+Halle,die,eine,Nomen,ホール
+hallo ,,,,こんにちは
+halten ,,,,止まる
+Haltestelle,die,eine,Nomen,停止
+Hand,die,eine,Nomen,手
+Handy,das,ein,Nomen,携帯電話
+Haus,das,ein,Nomen,家
+Hausaufgabe-n,die,eine,Nomen,宿題
+Hausfrau,die,eine,Nomen,主婦
+Hausmann,der,ein,Nomen,主夫
+Heimat,die,eine,Nomen,ホームタウン
+heiraten ,,,,結婚する
+heißen,,,,呼ばれる
+helfen ,,,,助ける
+hell,,,,明るい
+Herbst,der,ein,Nomen,秋
+Herd,der,ein,Nomen,レンジ
+Herr,der,ein,Nomen,ミスター
+herzlich ,,,,心からの
+heute ,,,,今日
+hier ,,,,ここ
+Hilfe,die,eine,Nomen,ヘルプ
+hinten ,,,,後方
+Hobby,das,ein,Nomen,趣味
+hoch ,,,,高い
+Hochzeit,die,eine,Nomen,結婚式
+holen ,,,,持ってくる
+hören ,,,,聞く
+Hotel -s,das,ein,Nomen,ホテル
+Hund -e,der,ein,Nomen,犬
+hunderteins,,,Zahl,101
+Hunger,der,ein,Nomen,飢え
+ich ,,,,私
+ihr/ihm/ihn,,,,彼女/彼/彼らに
+immer ,,,,いつも
+in ,,,,で
+Information,die,eine,Nomen,情報
+Interessen,,,Nomen,興味
+Internet,das,ein,Nomen,インターネット
+ja,,,,はい
+Jacke,die,eine,Nomen,ジャケット
+Jahr -e,das,ein,Nomen,年
+Januar,der,ein,Nomen,1月
+jed-,,,,しかし
+jetzt,,,,今
+Job,der,ein,Nomen,仕事
+Jugendliche,der,ein,Nomen,若者たち
+Juli,der,ein,Nomen,7月
+jung,,,,若い
+Junge,der,ein,Nomen,男の子
+Juni,der,ein,Nomen,6月
+Kaffee,der,ein,Nomen,コーヒー
+kaputt ,,,,壊れた
+Karte,die,eine,Nomen,地図
+Kartoffel,die,eine,Nomen,じゃがいも
+Kasse,die,eine,Nomen,チェックアウト
+kaufen ,,,,買う
+kein ,,,,いいえ
+kennen ,,,,知る
+kennenlernen ,,,,知り合う
+Kind,das,ein,Nomen,子供
+Kindergarten,der,ein,Nomen,幼稚園
+Kino,das,ein,Nomen,シネマ
+Kiosk,der,ein,Nomen,キオスク
+klar ,,,,明白な
+Klasse,die,eine,Nomen,クラス
+Kleidung,die,eine,Nomen,衣類
+klein ,,,,小さい
+kochen ,,,,料理する
+Koffer,der,ein,Nomen,スーツケース
+Kollege,der,ein,Nomen,同僚
+kommen ,,,,来る
+können ,,,,できる
+Konto,das,ein,Nomen,アカウント
+Kopf,der,ein,Nomen,頭
+kosten ,,,,価格である
+krank ,,,,病気の
+kriegen ,,,,得る
+Küche,die,eine,Nomen,台所
+Kuchen,der,ein,Nomen,ケーキ
+Kugelschreiber,der,ein,Nomen,ボールペン
+Kühlschrank,der,ein,Nomen,冷蔵庫
+kulturell ,,,,文化的な
+Kunde,der,ein,Nomen,お客様
+Kurs,der,ein,Nomen,コース
+kurz ,,,,短い
+lachen ,,,,笑う
+Laden,der,ein,Nomen,負荷
+Land,das,ein,Nomen,国
+lang ,,,,長さ
+lange ,,,,長い
+langsam ,,,,遅い
+laufen ,,,,走る
+laut ,,,,うるさい
+Leben,das,ein,Nomen,人生
+leben ,,,,暮らす
+Lebens-,die,eine,Nomen,人生
+ledig ,,,,独身の
+legen ,,,,場所
+Lehrer –,der,ein,Nomen,先生
+leicht ,,,,ライト
+leider ,,,,残念ながら
+leise ,,,,静かな
+lernen ,,,,学ぶ
+lesen ,,,,読む
+letzt- ,,,,最終の
+Leute (pl.),die,eine,Nomen,人々（複数形）
+Licht,das,ein,Nomen,ライト
+lieb- ,,,,親愛なる-
+lieben ,,,,愛する
+lieber ,,,,親愛なる
+Lied,das,ein,Nomen,歌
+liegen,,,,横たわる
+links ,,,,左
+Lkw,der,ein,Nomen,トラック
+Lokal,das,ein,Nomen,地元
+Lösung,die,eine,Nomen,解決
+lustig ,,,,面白い
+machen ,,,,作る
+Mädchen,das,ein,Nomen,女の子
+Mahlzeiten,,,Nomen,食事
+Mai,der,ein,Nomen,5月
+man ,,,,人間
+Mann,der,ein,Nomen,男
+männlich ,,,,男性的な
+März,der,ein,Nomen,3月
+März,der,ein,Nomen,行進
+Maschine,die,eine,Nomen,機械
+Maße,,,Nomen,質量
+Meer,das,ein,Nomen,海
+mehr ,,,,もっと
+mein ,,,,私の
+meist- ,,,,たいてい-
+Mensch,der,ein,Nomen,人
+Miete,die,eine,Nomen,家賃
+mieten ,,,,賃貸しする
+Milch,die,eine,Nomen,牛乳
+Minute -n,die,eine,Nomen,分
+mit ,,,,と共に、を用いて
+mitbringen ,,,,持参する
+mitkommen ,,,,一緒に来なさい
+mitmachen ,,,,参加する
+mitnehmen ,,,,持っていく
+Mittag,der,ein,Nomen,正午
+Mitte,die,eine,Nomen,中心
+Mittwoch,der,ein,Nomen,水曜日
+Möbel (pl.),die,eine,Nomen,家具（複数形）
+möchten ,,,,欲しい
+mögen ,,,,好む
+möglich,,,,可能である
+Moment,der,ein,Nomen,一瞬
+Monat,,,Nomen,月
+Montag,der,ein,Nomen,月曜日
+Morgen,der,ein,Nomen,朝
+morgen,,,,明日
+müde ,,,,疲れた
+Mund,der,ein,Nomen,口
+müssen,,,,しなければならない
+Mutter,die,eine,Nomen,母親
+nach,,,,～へ
+nächst- ,,,,次-
+Nacht¨-e,die,eine,Nomen,夜
+Nahrungsmittel,,,Nomen,食べ物
+Name,der,ein,Nomen,名前
+Name,,,Nomen,名前
+Nationalität/Herkunft,,,Nomen,国籍/出身地
+Nationalitäten,,,Nomen,国籍
+nehmen ,,,,取る
+nein ,,,,いいえ
+neu ,,,,新しい
+neun,,,Zahl,9
+neunzehn,,,Zahl,19
+neunzig,,,Zahl,90
+nicht ,,,,～でない
+nichts ,,,,何もない
+nie ,,,,一度もない
+noch ,,,,静かな
+Norden,der,ein,Nomen,北
+normal ,,,,普通の
+November,der,ein,Nomen,11月
+Nummer,die,eine,Nomen,番号
+nur ,,,,のみ
+oben ,,,,その上
+Obst,das,ein,Nomen,フルーツ
+oder ,,,,または
+öffnen ,,,,開ける
+oft ,,,,頻繁に
+ohne ,,,,それなし
+Oktober,der,ein,Nomen,10月
+Öl,das,ein,Nomen,油
+Oma,die,eine,Nomen,おばあちゃん
+Opa,der,ein,Nomen,おじいちゃん
+Ordnung,die,eine,Nomen,注文
+Ort,der,ein,Nomen,位置
+Papier,das,ein,Nomen,紙
+Papiere,die,eine,Nomen,論文
+Partner -/,der,ein,Nomen,パートナー
+Partnerin,die,eine,Nomen,パートナー
+Party,die,eine,Nomen,パーティー
 Pass,der,ein,Nomen,パスポート
-Wort150,,,Nomen,単語150
+Pause -n,die,eine,Nomen,ブレーク
+Pflanzen,,,Nomen,植物
+Plan,der,ein,Nomen,プラン
+Platz,der,ein,Nomen,場所
+Polizei,die,eine,Nomen,警察
+Polizei,,,Nomen,警察
+Pommes,die,eine,Nomen,フライドポテト
+Post,die,eine,Nomen,役職
+Post,,,Nomen,役職
+Postleitzahl,die,eine,Nomen,郵便番号
+Praktikum,das,ein,Nomen,インターンシップ
+Praxis,die,eine,Nomen,練習
+Preis,der,ein,Nomen,価格
+Problem,das,ein,Nomen,問題
+Prospekt,der,ein,Nomen,目論見書
+Prüfung,die,eine,Nomen,試験
+pünktlich,,,,時間通りに
+Rad,,,Nomen,車輪
+Radio,das,ein,Nomen,ラジオ
+rauchen,,,,タバコを吸う
+Raum -ä e,der,ein,Nomen,部屋
+Räume,,,Nomen,客室
+Rechnung,die,eine,Nomen,請求書
+rechts ,,,,右
+Regen,der,ein,Nomen,雨
+regnen,,,,雨が降る
+Reis,der,ein,Nomen,米
+Reise,die,eine,Nomen,旅行
+Reisebüro,das,ein,Nomen,旅行代理店
+Reiseführer,der,ein,Nomen,旅行ガイド
+reisen,,,,旅行
+Reparatur,die,eine,Nomen,修理
+reparieren ,,,,修理
+Restaurant,das,ein,Nomen,レストラン
+Rezeption,die,eine,Nomen,受付
+richtig ,,,,正しい
+riechen ,,,,においがする
+ruhig ,,,,静かな
+S-Bahn,die,eine,Nomen,Sバーン
+Saft,der,ein,Nomen,ジュース
+sagen ,,,,言う
+Salat,der,ein,Nomen,レタス
+Salz,das,ein,Nomen,塩
+Schalter,der,ein,Nomen,スイッチ
+scheinen ,,,,思われる
+schicken ,,,,送信する
+Schild,das,ein,Nomen,サイン
+Schinken,der,ein,Nomen,ハム
+schlafen ,,,,寝る
+schlecht ,,,,気分が悪い
+schließen ,,,,近い
+Schluss,der,ein,Nomen,結論
+Schlüssel,der,ein,Nomen,鍵
+schmecken,,,,おいしい
+schnell,,,,ほとんど
+schön,,,,素敵な
+schon,,,,すでに
+Schrank,der,ein,Nomen,ワードローブ
+schreiben,,,,書く
+Schuh,der,ein,Nomen,靴
+Schule,die,eine,Nomen,学校
+Schüler,der,ein,Nomen,生徒
+schwer ,,,,難しい
+Schwester,die,eine,Nomen,妹
+Schwimmbad,das,ein,Nomen,スイミングプール
+schwimmen,,,,泳ぐ
+sechs,,,Zahl,6
+sechzehn,,,Zahl,16
+sechzig,,,Zahl,60
+See,der,ein,Nomen,湖
+sehen,,,,見る
+Sehenswürdigkeit,die,eine,Nomen,観光
+sehr,,,,とても
+sein,,,,なれ
+seit,,,,以来
+selbstständig ,,,,自営業
+September,der,ein,Nomen,9月
+sich,,,,自体
+sich kümmern,,,,気をつけて
+sie,,,,彼女は
+sieben,,,Zahl,7
+sieben,,,Zahl,7
+siebzehn,,,Zahl,17
+siebzig,,,Zahl,70
+sitzen ,,,,座る
+so ,,,,それで
+Sofa,das,ein,Nomen,ソファー
+sofort ,,,,すぐに
+Sohn,der,ein,Nomen,息子
+sollen ,,,,すべき
+Sommer,der,ein,Nomen,夏
+Sonne,die,eine,Nomen,太陽
+Sonntag,der,ein,Nomen,日曜日
+spät,,,,遅い
+später,,,,後で
+Speisekarte,die,eine,Nomen,メニュー
+spielen,,,,遊ぶ
+Sport,der,ein,Nomen,スポーツ
+Sprache,die,eine,Nomen,言語
+sprechen,,,,話す
+Staatsangehörigkeit,,,Nomen,国籍/
+Stadt,die,eine,Nomen,市
+stehen ,,,,立つ
+Stelle,die,eine,Nomen,位置
+stellen ,,,,置く
+Stock,der,ein,Nomen,棒
+Straße,die,eine,Nomen,通り
+Straßenbahn,die,eine,Nomen,路面電車
+Student,der,ein,Nomen,学生
+studieren ,,,,勉強する、専攻する
+Studium,das,ein,Nomen,研究
+Stunde,die,eine,Nomen,時間
+suchen ,,,,求める
+Tag,der,ein,Nomen,日
+Tag -e,der,ein,Nomen,その日
+tanzen,,,,踊る
+Tasche,die,eine,Nomen,バッグ
+Taxi,das,ein,Nomen,タクシー
+Tee,der,ein,Nomen,お茶
+Teil,der,ein,Nomen,一部
+Telefon,das,ein,Nomen,電話
+telefonieren ,,,,電話をかける
+Telekommunikation,,,Nomen,通信
+Termin,der,ein,Nomen,予定
+Test,der,ein,Nomen,テスト
+teuer ,,,,高い
+Text,der,ein,Nomen,文章
+Thema,das,ein,Nomen,テーマ
+Ticket,das,ein,Nomen,チケット
+Tisch,der,ein,Nomen,テーブル
+Tochter,die,eine,Nomen,娘
+Toilette,die,eine,Nomen,トイレ
+Tomate,die,eine,Nomen,トマト
+tot ,,,,死んだ
+Treppe,die,eine,Nomen,階段
+trinken ,,,,飲む
+tschüss ,,,,さよなら
+tun ,,,,する
+über ,,,,その上
+übernachten ,,,,一晩泊まる
+überweisen ,,,,送る
+Uhr,die,eine,Nomen,時計
+um,,,,に
+umziehen ,,,,動く
+und ,,,,そして
+unser- ,,,,私たちの-
+unten ,,,,下に
+unter,,,,下
+Unterricht,der,ein,Nomen,教訓
+unterschreiben ,,,,署名する
+Unterschrift,die,eine,Nomen,署名
+Urlaub,der,ein,Nomen,休日
+Vater,der,ein,Nomen,父親
+verboten ,,,,禁じる
+verdienen ,,,,得る
+Verein,der,ein,Nomen,協会
+verheiratet ,,,,結婚した
+verkaufen ,,,,売る
+Verkäufer,der,ein,Nomen,営業担当者
+vermieten ,,,,賃貸しする
+Vermieter,der,ein,Nomen,家主
+verstehen ,,,,理解する
+Verwandte,der,ein,Nomen,親戚
+viel ,,,,多くの
+vielleicht ,,,,多分
+vier,,,Zahl,4
+vierundzwanzig,,,Zahl,24
+vierzehn,,,Zahl,14
+vierzig,,,Zahl,40
+von,,,,から
+vor,,,,前に
+Vormittag-e,der,ein,Nomen,午前
+Vorname,der,ein,Nomen,ファーストネーム
+Vorsicht,die,eine,Nomen,注意
+Vorwahl,die,eine,Nomen,電話番号のプレフィックス
+wandern ,,,,ハイキングする
+wann,,,,いつ
+warten ,,,,待つ
+warum ,,,,なぜ
+was,,,,何
+was für ein,,,,なんて
+Wasser,das,ein,Nomen,水
+weg sein,,,,離れて
+weh tun,,,,傷つく
+weiblich ,,,,女性の
+Wein,der,ein,Nomen,ワイン
+weit ,,,,遠い
+weiter ,,,,さらに遠く
+welch- ,,,,どれの-
+Welt,die,eine,Nomen,世界
+wenig ,,,,少し
+wer ,,,,誰が
+werden ,,,,なる
+Wetter,das,ein,Nomen,天気
+wichtig ,,,,重要な
+wie ,,,,どうやって
+wie viel,,,,いくら
+wiederholen,,,,繰り返す
+Wiederhören,,,Nomen,再会
+willkommen,,,,いらっしゃいませ
+Wind,der,ein,Nomen,風
+Winter,der,ein,Nomen,冬
+wir,,,,私たちは
+wissen,,,,知識として知っている
+wo,,,,どこ
+Wochenende,,,Nomen,週末
+Wochentag,der,ein,Nomen,平日
+woher,,,,どこから
+wohin,,,,どこ
+wohnen,,,,居住する
+Wohnung,die,eine,Nomen,アパート
+wollen,,,,欲しい
+Wort,das,ein,Nomen,言葉
+wunderbar,,,,素晴らしい
+zahlen,,,,支払う
+zehn,,,Zahl,10
+Zeit,die,eine,Nomen,時間
+Zeitung,die,eine,Nomen,新聞
+Zigarette,die,eine,Nomen,シガレット
+Zimmer,das,ein,Nomen,部屋
+Zoll,der,ein,Nomen,税関
+zu,,,,に
+zu sein,,,,なる
+zufrieden ,,,,満足した
+Zug,der,ein,Nomen,電車
+zum,,,,のために
+zurück,,,,戻る
+zurzeit,,,,現在
+zusammen,,,,一緒に
+zwanzig,,,Zahl,20
+zwei,,,Zahl,2
+zweihundert,,,Zahl,200
+zwischen,,,,間
+zwölf,,,Zahl,12
